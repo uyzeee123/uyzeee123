@@ -1,0 +1,230 @@
+<html>
+<head> 
+	<style>
+		h1{
+			background-color: white;
+		}
+	</style>
+<title>Home Page </title>
+<style>
+
+
+</style>
+</head>
+<body class="body" background="" style="background-color:black;text-align:left;font-family:Georgia;line-height:1.5;font-size:16px;
+width:95%; height:80%; margin:0 auto;clear:both;">
+
+<!--Header-->
+<header id="mainheader" style="">
+
+           <center><h1></h1></center>
+           <center> <h1> THE UNIQUE COLLECTIONS </h1> </center>
+		   
+		   
+<!--Menus-->
+              <aside style="background-color:#191919;height:60px;border-radius:7px;">
+			  <ul style="list-style:none;margin:0 auto;">
+			  
+                <li class="active" style="float:center;display:inline;">
+				<a href="index.html" style="text-decoration:none;color:#fff;display:inline-block;padding:20px 70px;height:20px;
+				text-shadow:none;border-radius:15px;">Home page</a></li>
+				
+			
+</header>
+
+<!--Content 1-->
+<div class="maincontent" style="border-radius:5px;line-height:25px;">
+	<div class="content" style="width:70%;float:left;">
+		<article class="topcontent" style="background-color:#fff;border-radius:5px;padding:3% 5%;margin-top:2%;">
+			
+			<content>
+				    <table  height="px">
+					<tr color="black" width="150px">
+					   
+					  <strong><font face = "Georgia" size = "5"><center><marquee> HOME OF THE BEST PRODUCTS AND ASSORTED COLLECTIONS </marquee> </strong></font></center><br><br>
+					  
+					  <!--<center><img src="image/homeslide.gif" alt="slide image"height = "1000" style = "width:60%;  height:auto; position: relative; border-radius:5% border-style: round">-->
+					 
+					<!---Javascript to change image after seconds --->		
+					 <script>
+						var picPaths = [ 'image/blackclock.png', 'image/classical watches.png', 'image/black leather.png', 'image/ar2.jpeg', 'image/22.jpg', 'image/416203_heroa.jpg'];	
+						var curPic = -1;
+						
+						//Preload the images for smooth animation.
+						var img0 = new Array();
+						for(i=0; i< picPaths.length; i++)
+						{
+							img0[i] = new Image();
+							img0[i].src = picPaths[i];
+							
+						}
+						
+						function swapImage()
+						{
+							curPic = (++curPic > picPaths.length -1)? 0 : curPic;
+							imgCont.src = img0[curPic].src;
+							setTimeout(swapImage, 6000);
+						}
+						window.onload = function()
+						{
+							imgCont = document.getElementById('imgholder');
+							swapImage();
+						}
+					  </script>
+					  
+					<!--Javascript code ends --->
+					
+					<!--- Image holder div begins--->
+					<div>
+					<center><img id = "imgholder" border = "0" width = "700" height = "500" src = "" alt = "" /></center>
+						</div>
+					<!--- Image holder div ends --->
+					
+					<h3><p style="text-align:center;color:black;"></p></h3></a></td>
+					  
+					  
+					  </hr>
+					  
+					  </tr>
+			           </table>
+					   
+					   <p style = "text-align:justify;">
+					   Welcome to Online Boutique Shopping. We sell quality products from reputable companies
+					   from around the world. Online Boutique Shopping is known with good reputation by its customers.
+					   Please feel free to navigate through our collections of cloths, shoes, wristwatches.</p><br>
+					   <center><p> Thank you for your patronage </p></center>
+			
+				<hr/>
+			</content>
+		</article>	
+			
+<!--Content 2-->			
+		
+			
+			
+	</div>
+
+
+<!--Image -->
+<aside class="top-sidebar" style="width:21%;float:left;background-color:#fff;border-radius:5px;margin-left:3%;padding:2% 3%;
+margin-bottom:3%;margin-top:2%">
+	<article>
+	
+		<h2 style="text-align:center;margin-top:1%;">Unique goods in glance</h2><hr/>
+		<img src="image/slide1.gif" width="250px" alt="slide image" height="200" style="margin:2% 0;border-radius:5px;">
+		</article>
+	
+	</aside>
+
+<!--Order Online-->
+
+<aside class="middle-sidebar" style="width:21%;float:left;background-color:#fff;border-radius:5px;margin-left:3%;padding:2% 3%;
+margin-bottom:2%;">
+	<article>
+		<h2 style="text-align:center;margin-top:1%;">Online Order</h2><hr/>
+		<p>Place your order now </p>
+
+<section id="order-form" class="order-page">
+    <div class="row">
+      <div class="">
+      <div class="">  
+       <div class="">
+       <form action="chkform" name="check" id="order_form" method="post">
+            <div class="row">
+            <div class="col_5">
+            <div id="result" class="text-center"></div></div></div>
+             <div class="row">
+             </div>
+              <div class="row">
+                <div class="col_6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Your Name"  name="name" id="name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Phone No" name="phone" id="phone">
+			
+                  </div>
+				   <div>
+				   <hr/>
+				  <strong>Gender</strong><br><hr/>
+				  <input type="radio" name="male">Male <input type="radio" name="male">Female<hr/>
+				  </div>
+                </div>
+                <div class="col-md-6">
+                  
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea placeholder="Spacify your products" id="message" name="message" ></textarea>
+                  </div>
+                  <div class="form-group">
+                     <div class="btn-submit">
+                    <input type="submit" value="Place &nbsp;  Order"  id="submit" name="int"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </form>
+           </div> 
+           </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</section>
+	</article>
+</aside>
+
+<!--Our Menu-->
+
+<aside class="bottom-sidebar" style="width:21%;float:left;background-color:#fff;border-radius:5px;margin-left:73%;padding:2% 3%;
+margin-bottom:2%;">
+	<article>
+		<h2 style="text-align:center;margin-top:1%;">Our Menus</h2><hr/>
+		<p><table style="width:245px;background-color:gray;color:#FFF;border-radius:5px;">
+<tr style="color:#000;font-weight:bold;">
+  <td>PRODUCT</td>		
+  <td>PRICE</td>
+  </tr>
+  
+
+
+ 
+<tr>
+  <td>shirt</td>		
+  <td><span data-currency-iso="NGN" >&#8358;</span>2500</td>
+</tr>
+<tr>
+  <td>men shoe</td>		
+  <td><span data-currency-iso="NGN" >&#8358;</span>1500</td>
+</tr>
+<tr>
+  <td>women shoe</td>		
+  <td><span data-currency-iso="NGN" >&#8358;</span>1500</td>
+</tr>
+<tr>
+  <td>women dress</td>		
+  <td><span data-currency-iso="NGN" >&#8358;</span>2000</td>
+</tr>
+<tr>
+  <td>desktop</td>		
+  <td><span data-currency-iso="NGN" >&#8358;</span>20,000</td>
+</tr>
+</table></p>
+	</article>
+</aside>
+
+
+
+ 
+</body>
+</html>
